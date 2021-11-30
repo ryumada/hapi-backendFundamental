@@ -1,11 +1,12 @@
+const { nanoid } = require('nanoid');
+
 class NotesService {
 	constructor() {
 		this._notes = [];
 	}
 
 	addNote({title, body, tags}) {
-		// eslint-disable-next-line no-undef
-		const id = nano(16);
+		const id = nanoid(16);
 		const createdAt = new Date().toISOString();
 		const updatedAt = createdAt;
 
