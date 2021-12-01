@@ -1,4 +1,8 @@
-# main node file and folders
+# .env configuration (this file is prohibited to be committed to a git repository, these files in this repository is used just for educational purpose.)
+# .env
+# .prod.env
+
+ main node file and folders
 **/node_modules
 **/package-lock.json
 
