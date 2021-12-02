@@ -1,6 +1,5 @@
-# .env configuration (this file is prohibited to be committed to a git repository, these files in this repository is used just for educational purpose.)
-# .env
-# .prod.env
+# .env configuration
+.env
 
  main node file and folders
 **/node_modules
