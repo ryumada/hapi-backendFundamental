@@ -53,7 +53,7 @@ class NotesHandler {
 	async getNotesHandler () {
 		const notes = await this._service.getNotes();
 
-		// TODO tidak pakai parameter h untuk membuat response dengan h.response
+		// tidak pakai parameter h untuk membuat response dengan h.response
 		return {
 			status: 'success',
 			data: {
