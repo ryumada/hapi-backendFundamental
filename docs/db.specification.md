@@ -4,8 +4,7 @@ Database name &nbsp;&nbsp;&nbsp;&nbsp; : **notesapp**
 
 Database engine &nbsp;&nbsp; : PostgreSQL
 
-
-# Table List
+# Table Lists
 - [notes](#notes)
 - [users](#users)
 
