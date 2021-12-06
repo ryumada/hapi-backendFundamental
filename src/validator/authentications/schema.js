@@ -6,11 +6,11 @@ const PostAuthenticationPayloadSchema = Joi.object({
 });
 
 const PutAuthenticationPayloadSchema = Joi.object({
-	refreshToken: Joi.string.required(),
+	refreshToken: Joi.string().required(),
 });
 // Schema Put dan Delete memiliki skema yang sama, tapi bukan ide yang baik untuk menggabungkannya
 const DeleteAuthenticationPayloadSchema = Joi.object({
-	refreshToken: Joi.string.required(),
+	refreshToken: Joi.string().required(),
 });
 
 module.exports = {
