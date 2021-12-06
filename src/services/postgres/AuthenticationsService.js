@@ -4,13 +4,12 @@ const InvariantError = require('../../exceptions/InvariantError');
 class AuthenticationsService {
 	constructor() {
 		this._pool = new Pool();
-		this._tbName = 'authentications';
 	}
 
 	async addRefreshToken(token) {
 		const query = {
-			text: 'INSERT INTO $1 VALUES($2)',
-			values: [this._tbName, token],
+			text: 'INSERT INTO authentications VALUES($1)',
+			values: [token],
 		};
 
 		await this._pool.query(query);
@@ -18,8 +17,8 @@ class AuthenticationsService {
 
 	async verifyRefreshToken(token) {
 		const query = {
-			text: 'SELECT token FROM $1 WHERE token = $2',
-			values: [this._tbName, token],
+			text: 'SELECT token FROM authentications WHERE token = $1',
+			values: [token],
 		};
 
 		const result = await this._pool.query(query);
@@ -31,8 +30,8 @@ class AuthenticationsService {
 
 	async deleteRefreshToken(token) {
 		const query = {
-			text: 'DELETE FROM $1 WHERE token = $2',
-			vaues: [this._tbName, token],
+			text: 'DELETE FROM authentications WHERE token = $1',
+			values: [token],
 		};
 
 		await this._pool.query(query);
