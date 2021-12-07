@@ -1,4 +1,5 @@
-> This scenario is used to create postman testing scripts
+bodyFolder: Authentications
+
 - [Skenario 1: Post Authentication with Valid Credential (login dengan kredensial yang benar)](#skenario-1-post-authentication-with-valid-credential-login-dengan-kredensial-yang-benar)
 - [Skenario 2: Post Authentication with Invalid Credential (login dengan kredensial yang salah)](#skenario-2-post-authentication-with-invalid-credential-login-dengan-kredensial-yang-salah)
 - [Skenario 3:  Getting All Notes Without Access Token (mendapatkan seluruh notes tanpa akses token)](#skenario-3--getting-all-notes-without-access-token-mendapatkan-seluruh-notes-tanpa-akses-token)
