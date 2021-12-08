@@ -3,7 +3,7 @@ const { Pool } = require('pg');
 const InvariantError = require('../../exceptions/InvariantError');
 
 class CollaborationsService{
-	constuctor() {
+	constructor() {
 		this._pool = new Pool();
 	}
 
@@ -33,11 +33,11 @@ class CollaborationsService{
 		const result = await this._pool.query(query);
 
 		if(!result.rowCount){
-			throw InvariantError('Kolaborasi gagal dihapus');
+			throw new InvariantError('Kolaborasi gagal dihapus');
 		}
 	}
 
-	async verifyCollaboration(noteId, userId) {
+	async verifyCollaborator(noteId, userId) {
 		const query = {
 			text: 'SELECT * FROM collaborations WHERE note_id = $1 AND user_id = $2',
 			values: [noteId, userId],
