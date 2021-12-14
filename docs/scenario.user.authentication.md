@@ -1,4 +1,4 @@
-bodyFolder: Authentications
+Folder: Authentications
 
 - [Skenario 1: Post Authentication with Valid Credential (login dengan kredensial yang benar)](#skenario-1-post-authentication-with-valid-credential-login-dengan-kredensial-yang-benar)
 - [Skenario 2: Post Authentication with Invalid Credential (login dengan kredensial yang salah)](#skenario-2-post-authentication-with-invalid-credential-login-dengan-kredensial-yang-salah)
