@@ -3,7 +3,9 @@
 
  main node file and folders
 **/node_modules
-**/package-lock.json
+
+# this is a file upload folder that should be ignored for any changes
+src/api/uploads/file
 
 coverage.*
 
